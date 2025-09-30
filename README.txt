@@ -1,6 +1,5 @@
 # WEBSITE CODE EXTRACTIONS REPORT 
 
-Website: https://bandaheali-tiktok-video-dl.vercel.app/
 EXTRACTION DATE: 1862337.207767945
 
 ## Summary:
