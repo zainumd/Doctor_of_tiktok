@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandaheali TikTok Video Downloader - Download TikTok Videos Without Watermark</title>
+    <meta name="description" content="Free TikTok video downloader - Download videos without watermark in HD quality">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>🎬 TikTok Video Downloader</h1>
+            <p class="tagline">Download TikTok videos without watermark in high quality</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Input Section -->
+            <section class="input-section">
+                <div class="url-input-container">
+                    <input 
+                        type="text" 
+                        id="tiktokUrl" 
+                        placeholder="Paste TikTok video URL here... Example: https://vt.tiktok.com/ZSDF12345/" 
+                        class="url-input"
+                    />
+                    <button onclick="downloadVideo()" class="download-btn" id="downloadBtn">
+                        <span class="btn-text">Download Video</span>
+                        <span class="btn-loader" style="display: none;">⏳ Processing...</span>
+                    </button>
+                </div>
+                <div class="examples">
+                    <p><strong>Supported URLs:</strong> vt.tiktok.com, vm.tiktok.com, www.tiktok.com</p>
+                </div>
+            </section>
+
+            <!-- Loading Section -->
+            <section id="loading" class="loading-section" style="display: none;">
+                <div class="loader"></div>
+                <p>Fetching video information... Please wait</p>
+            </section>
+
+            <!-- Result Section -->
+            <section id="result" class="result-section" style="display: none;">
+                <!-- Video Preview -->
+                <div class="video-preview" id="videoPreview">
+                    <h3>🎥 Video Preview</h3>
+                    <video controls id="videoPlayer" class="video-player">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- Video Information -->
+                <div class="video-info">
+                    <h3>📊 Video Information</h3>
+                    <div id="videoDetails" class="video-details"></div>
+                </div>
+
+                <!-- Download Options -->
+                <div class="download-options">
+                    <h3>⬇️ Download Options</h3>
+                    <div id="downloadButtons" class="download-buttons"></div>
+                </div>
+            </section>
+
+            <!-- Error Section -->
+            <section id="error" class="error-section" style="display: none;">
+                <div class="error-message">
+                    <h3>❌ Error</h3>
+                    <p id="errorText">Something went wrong. Please try again.</p>
+                    <button onclick="hideError()" class="retry-btn">Try Again</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <h2>✨ Why Use Our TikTok Downloader?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>🚫 No Watermark</h3>
+                    <p>Download videos without TikTok watermark</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🛡️ Safe & Secure</h3>
+                    <p>100% secure, no login required</p>
+                </div>
+                <div class="feature-card">
+                    <h3>⚡ Fast Download</h3>
+                    <p>Quick processing and high-speed downloads</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📱 Mobile Friendly</h3>
+                    <p>Works perfectly on all devices</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 Bandaheali Tiktok Video Dl. Proudly Made In Pakistan.</p>
+            <p class="disclaimer">
+                Disclaimer: This tool is for personal use only. Please respect copyright laws and TikTok's terms of service.
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
